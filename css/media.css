@@ -1,0 +1,28 @@
+@media screen and (min-width: 428px) {
+  /*------------- Main 2 section------------- */
+  .container {
+    max-width: 426px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  /*------------- Main 2 section------------- */
+  .container {
+    max-width: 766px;
+  }
+
+  .skills-list-item {
+    flex-basis: calc((100% - 24px) / 2);
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  /*------------- Main 2 section------------- */
+  .container {
+    max-width: 1128px;
+  }
+
+  .skills-list-item {
+    flex-basis: calc((100% - 72px) / 4);
+  }
+}

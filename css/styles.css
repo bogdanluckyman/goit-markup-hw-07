@@ -35,7 +35,7 @@ img {
 }
 
 .container {
-  width: 1158px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -221,6 +221,7 @@ img {
   margin-bottom: 0;
   display: flex;
   gap: 24px;
+  flex-wrap: wrap;
 }
 
 .skills-icon-box {
@@ -234,7 +235,7 @@ img {
 }
 
 .skills-list-item {
-  flex-basis: calc((100% - 72px) / 4);
+  /* flex-basis: calc((100% - 72px) / 4); */
 }
 
 .item-title {
