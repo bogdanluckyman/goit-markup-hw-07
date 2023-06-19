@@ -1,14 +1,36 @@
 @media screen and (min-width: 428px) {
-  /*------------- Main 2 section------------- */
   .container {
     max-width: 426px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  /*------------- Main 2 section------------- */
   .container {
     max-width: 766px;
+  }
+
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/dark-bg-tab.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/dark-bg-tab-2x.jpg);
+    }
+  }
+
+  .hero-title {
+    font-size: 56px;
   }
 
   .item-title {
@@ -18,12 +40,45 @@
   .skills-list-item {
     flex-basis: calc((100% - 24px) / 2);
   }
+
+  .team-list {
+    /* background-color: var(--background-color); */
+    margin-top: 0;
+    margin-bottom: 0;
+    /* margin-left: auto;
+  margin-right: auto; */
+    display: flex;
+    /* flex-wrap: nowrap; */
+    gap: 24px;
+    /* gap: 72px;
+  max-width: 264px; */
+  }
 }
 
 @media screen and (min-width: 1158px) {
-  /*------------- Main 2 section------------- */
   .container {
     max-width: 1128px;
+  }
+
+  .hero {
+    padding: 188px 0 188px 0;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/background.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/people-office-2x.jpg);
+    }
   }
 
   .skills-list-item {
@@ -50,5 +105,35 @@
 
   .item-text {
     font-weight: 400;
+  }
+
+  .images-title {
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--title-color);
+    margin-top: 0;
+    margin-bottom: 72px;
+  }
+
+  .images-list {
+    margin-top: 0;
+    margin-bottom: 0;
+    display: flex;
+    gap: 24px;
+  }
+
+  .images-item {
+    flex-basis: calc((100% - 3 * 16px) / 3);
+  }
+
+  .images {
+    padding-bottom: 120px;
+  }
+
+  .container-images {
+    display: block;
   }
 }
