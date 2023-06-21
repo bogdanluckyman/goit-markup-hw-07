@@ -87,7 +87,8 @@ img {
 }
 
 .header-list {
-  display: flex;
+  display: none;
+  /* display: flex; */
   gap: 40px;
   margin-right: auto;
   position: relative;
@@ -110,12 +111,14 @@ img {
 }
 
 .header-address {
+  display: none;
   font-style: normal;
   margin-left: auto;
 }
 
 .header-address-list {
-  display: flex;
+  display: none;
+  /* display: flex; */
   align-items: center;
   gap: 40px;
   margin-left: 0;
@@ -149,6 +152,95 @@ img {
   width: 100%;
   height: 4px;
   background-color: var(--hover-color);
+}
+
+.container.header-container {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.menu-btn {
+  margin-left: auto;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.icon-menu-burger {
+  stroke: var(--title-color);
+}
+
+.mob-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--background-color);
+  position: fixed;
+  z-index: 11;
+  top: 0;
+  padding: 80px 16px 40px 16px;
+}
+
+.menu-close-btn {
+}
+
+.mob-item {
+  margin-bottom: 40px;
+}
+
+.mob-list-item {
+  font-size: 36px;
+  font-family: Roboto;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.72px;
+  text-transform: capitalize;
+  color: var(--title-color);
+}
+
+.mob-list-item:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.mob-tel-item {
+  font-size: 28px;
+  font-family: Roboto;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.72px;
+  text-transform: capitalize;
+  color: #434455;
+  text-decoration: none;
+  font-style: normal;
+}
+
+.mob-address-item {
+  font-size: 20px;
+  font-family: Roboto;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.4px;
+  color: #434455;
+  text-decoration: none;
+  font-style: normal;
+}
+
+.mob-link {
+  margin-bottom: 48px;
+  margin-top: 40px;
+}
+
+.mob-box > .icons-box {
+  gap: 40px;
+}
+
+.mob-list-item:focus,
+.mob-tel-item:focus,
+.mob-address-item:focus {
+  color: var(--hover-color);
 }
 
 /*------------- Hero ------------- */
@@ -725,7 +817,7 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 408px;
+  width: 100%;
   min-height: 584px;
   background-color: var(--modal-background);
   border-radius: 4px;

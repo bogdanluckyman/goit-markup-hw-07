@@ -20,7 +20,7 @@
   </head>
   <body>
     <header class="header">
-      <!-- <div class="container header-container">
+      <div class="container header-container">
         <nav class="header-navigation">
           <a href="./index.html" class="header-logo link"
             >Web <span class="logo-word">Studio</span>
@@ -39,6 +39,11 @@
             <li><a href="" class="link header-list-item">Contacts</a></li>
           </ul>
         </nav>
+        <button class="menu-btn" type="button">
+          <svg width="32" height="22" class="icon-menu-burger" data-menu-open>
+            <use href="./images/icons.svg#icon-menu-hamburger"></use>
+          </svg>
+        </button>
         <address class="header-address">
           <ul class="header-address-list list">
             <li>
@@ -55,7 +60,79 @@
             </li>
           </ul>
         </address>
-      </div> -->
+      </div>
+      <div class="mob-menu is-hidden" data-menu>
+        <button
+          type="button"
+          class="menu-close-btn modal-close"
+          data-menu-close
+        >
+          <svg class="modal-close-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close-black"></use>
+          </svg>
+        </button>
+        <ul class="mob-list list">
+          <li class="mob-item">
+            <a href="./index.html" class="link mob-list-item active">Studio</a>
+          </li>
+          <li class="mob-item">
+            <a href="./portfolio.html" class="link mob-list-item active"
+              >Portfolio</a
+            >
+          </li>
+          <li class="mob-item">
+            <a href="" class="link mob-list-item">Contacts</a>
+          </li>
+        </ul>
+        <div class="mob-box">
+          <address class="mob-address">
+            <ul class="mob-address-list list">
+              <li>
+                <a href="tel:+110001111111" class="link mob-tel-item"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="mob-link">
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="link mob-address-item"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+          <ul class="icons-box list">
+            <li class="icons-box-item">
+              <a class="box-item-link link" href="">
+                <svg class="item-icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="icons-box-item">
+              <a class="box-item-link link" href="">
+                <svg class="item-icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="icons-box-item">
+              <a class="box-item-link link" href="">
+                <svg class="item-icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="icons-box-item">
+              <a class="box-item-link link" href="">
+                <svg class="item-icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
     <main>
       <!-- Hero -->
@@ -130,6 +207,7 @@
           <ul class="images-list list">
             <li class="images-item">
               <img
+                srcset="./images/img-1-2x.jpg 2x"
                 src="./images/photo-1.jpg"
                 alt="apple monitor"
                 width="360"
@@ -138,6 +216,7 @@
             </li>
             <li class="images-item">
               <img
+                srcset="./images/img-2-2x.jpg 2x"
                 src="./images/photo-3.jpg"
                 alt="iphone with open telegram"
                 width="360"
@@ -146,6 +225,7 @@
             </li>
             <li class="images-item">
               <img
+                srcset="./images/img-3-2x.jpg 2x"
                 src="./images/photo-2.jpg"
                 alt="iphone hold in their hands"
                 width="360"
@@ -162,6 +242,7 @@
           <ul class="team-list list">
             <li class="team-list-item">
               <img
+                srcset="./images/team-1-2x.jpg"
                 src="./images/img-1.jpg"
                 alt="first man"
                 width="264"
@@ -204,6 +285,7 @@
             </li>
             <li class="team-list-item">
               <img
+                srcset="./images/team-2-2x.jpg"
                 src="./images/img-2.jpg"
                 alt="second man"
                 width="264"
@@ -246,6 +328,7 @@
             </li>
             <li class="team-list-item">
               <img
+                srcset="./images/team-3-2x.jpg"
                 src="./images/img-3.jpg"
                 alt="first girl"
                 width="264"
@@ -288,6 +371,7 @@
             </li>
             <li class="team-list-item">
               <img
+                srcset="./images/team-4-2x.jpg"
                 src="./images/img-4.jpg"
                 alt="third man"
                 width="264"
@@ -530,5 +614,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
