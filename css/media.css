@@ -17,7 +17,11 @@
 
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 766px;
+    max-width: 768px;
+  }
+
+  .customers-container {
+    width: 552px;
   }
 
   .modal {
@@ -80,6 +84,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
+    row-gap: 72px;
   }
 
   .customers-list-item {
@@ -171,6 +176,10 @@
     max-width: 1128px;
   }
 
+  .customers-container {
+    width: 100%;
+  }
+
   .hero {
     padding: 188px 0 188px 0;
     background-image: linear-gradient(
@@ -190,6 +199,10 @@
         ),
         url(../images/people-office-2x.jpg);
     }
+  }
+
+  .header-address-item {
+    font-size: 16px;
   }
 
   .skills-list-item {
@@ -332,5 +345,13 @@
     gap: 40px;
     margin-left: 0;
     margin-right: 0;
+  }
+
+  .skills-list-item:not(:last-child) {
+    margin-bottom: 0;
+  }
+
+  .footer-icons {
+    margin-bottom: 0;
   }
 }
