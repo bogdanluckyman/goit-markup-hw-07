@@ -578,6 +578,11 @@ p {
   justify-content: center;
 }
 
+.header-logo.footer-logo {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
 .footer-text {
   font-size: 16px;
   line-height: 1.5;
